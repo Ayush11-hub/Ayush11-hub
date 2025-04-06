@@ -1,28 +1,17 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
 
 import pandas as pd
 cities = pd.read_csv("India_cities.csv")
 
 
-# In[5]:
-
-
 print(cities.head(9))
 
 
-# In[6]:
 
-
-# extracting the data we ar interested in
+# extracting the data we are interested in
 latitude, longitude = cities["latd"], cities["longd"]
 population, area = cities["population_total"], cities["area_total_km2"]
 
 
-# In[81]:
 
 
 # to scatter the points, using size and color but without label
